@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Snake - Juegos Pastel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="top-bar">
+    <a class="btn secondary" href="index.html">← Inicio</a>
+    <h1>🐍 Snake</h1>
+    <span></span>
+  </div>
+  <div class="game-box">
+    <div class="controls">
+      <button id="iniciar" class="btn menta">Iniciar / Reiniciar</button>
+    </div>
+    <div class="status" id="estado">Pulsa Iniciar</div>
+    <canvas id="juego" class="game" width="400" height="400"></canvas>
+    <p class="score" id="puntos">Puntos: 0 | Récord: 0</p>
+    <p class="hint">Flechas o WASD para mover. En móvil desliza sobre el cuadro.</p>
+  </div>
+</div>
+<script src="snake.js"></script>
+</body>
+</html>

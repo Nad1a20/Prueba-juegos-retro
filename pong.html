@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pong - Juegos Pastel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="top-bar">
+    <a class="btn secondary" href="index.html">← Inicio</a>
+    <h1>🏓 Pong</h1>
+    <span></span>
+  </div>
+  <div class="game-box">
+    <div class="controls">
+      <label>Modo:
+        <select id="modo">
+          <option value="cpu">Vs CPU</option>
+          <option value="2p">2 Jugadores</option>
+        </select>
+      </label>
+      <label id="labelDif">CPU:
+        <select id="dificultad">
+          <option value="facil">Fácil</option>
+          <option value="normal" selected>Normal</option>
+          <option value="dificil">Difícil</option>
+        </select>
+      </label>
+      <button id="iniciar" class="btn celeste">Iniciar</button>
+      <button id="pausa">Pausa</button>
+    </div>
+    <div class="status" id="estado">Pulsa Iniciar - Gana el primero a 5</div>
+    <canvas id="juego" class="game" width="800" height="450"></canvas>
+    <p class="score" id="puntos">Jugador 1: 0 | Jugador 2 / CPU: 0</p>
+    <p class="hint">Vs CPU: W/S o ↑/↓. 2P: izquierda W/S, derecha ↑/↓.</p>
+  </div>
+</div>
+<script src="pong.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gato - Juegos Pastel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="top-bar">
+    <a class="btn secondary" href="index.html">← Inicio</a>
+    <h1>⭕ Gato</h1>
+    <span></span>
+  </div>
+  <div class="game-box">
+    <div class="controls">
+      <label>Modo:
+        <select id="modo">
+          <option value="2p">2 Jugadores</option>
+          <option value="cpu">Vs CPU</option>
+        </select>
+      </label>
+      <label id="labelDificultad" style="display:none">CPU:
+        <select id="dificultad">
+          <option value="facil">Fácil</option>
+          <option value="dificil">Difícil</option>
+        </select>
+      </label>
+      <label id="labelSimbolo" style="display:none">Juegas:
+        <select id="simbolo">
+          <option value="X">X</option>
+          <option value="O">O</option>
+        </select>
+      </label>
+      <button id="reiniciar">Reiniciar</button>
+    </div>
+    <div class="status" id="estado">Turno: X</div>
+    <div id="tablero"></div>
+    <p class="score" id="marcador">X: 0 | O: 0 | Empates: 0</p>
+    <p class="hint">En modo Vs CPU tú eliges X u O. Difícil usa minimax, Fácil juega al azar.</p>
+  </div>
+</div>
+<script src="gato.js"></script>
+</body>
+</html>

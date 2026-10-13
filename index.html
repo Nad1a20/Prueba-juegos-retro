@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Melody Game</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <header class="hero">
+    <div class="pixel-badge">★ INSERT COIN ★</div>
+    <h1>Melody Game</h1>
+    <p class="subtitle">Elige tu juego favorito y diviértete</p>
+    <p class="blink">▼ PRESS START ▼</p>
+  </header>
+
+  <section class="hero-anim" aria-label="Vista previa de juegos">
+    <div class="mini rosa">
+      <div class="mini-title">GATO</div>
+      <div class="tictac"><span class="tx">X</span><span class="to">O</span></div>
+    </div>
+    <div class="mini menta">
+      <div class="mini-title">SNAKE</div>
+      <div class="snake-track"><div class="snake-body"></div><div class="apple"></div></div>
+    </div>
+    <div class="mini lila">
+      <div class="mini-title">TETRIS</div>
+      <div class="tetris-well"><div class="tetris-block"></div></div>
+    </div>
+    <div class="mini celeste">
+      <div class="mini-title">PONG</div>
+      <div class="pong-field"><div class="paddle left"></div><div class="pball"></div><div class="paddle right"></div></div>
+    </div>
+  </section>
+
+  <main class="grid">
+    <a class="card rosa" href="gato.html">
+      <span class="level">01</span>
+      <div class="emoji">⭕</div>
+      <h2>Gato</h2>
+      <p>3 en línea. 2 jugadores o vs CPU.</p>
+      <span class="play">▶ JUGAR</span>
+    </a>
+    <a class="card menta" href="snake.html">
+      <span class="level">02</span>
+      <div class="emoji">🐍</div>
+      <h2>Snake</h2>
+      <p>Come, crece y no choques.</p>
+      <span class="play">▶ JUGAR</span>
+    </a>
+    <a class="card lila" href="tetris.html">
+      <span class="level">03</span>
+      <div class="emoji">🧱</div>
+      <h2>Tetris</h2>
+      <p>Apila bloques y limpia líneas.</p>
+      <span class="play">▶ JUGAR</span>
+    </a>
+    <a class="card celeste" href="pong.html">
+      <span class="level">04</span>
+      <div class="emoji">🏓</div>
+      <h2>Pong</h2>
+      <p>Ping-pong. 2 jugadores o vs CPU.</p>
+      <span class="play">▶ JUGAR</span>
+    </a>
+  </main>
+
+  <footer>Melody Game © 2026 · Hecho con 💗 en HTML + JS</footer>
+</div>
+</body>
+</html>

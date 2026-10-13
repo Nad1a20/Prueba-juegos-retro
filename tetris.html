@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tetris - Juegos Pastel</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="container">
+  <div class="top-bar">
+    <a class="btn secondary" href="index.html">← Inicio</a>
+    <h1>🧱 Tetris</h1>
+    <span></span>
+  </div>
+  <div class="game-box">
+    <div class="controls">
+      <button id="iniciar" class="btn">Iniciar / Reiniciar</button>
+      <button id="pausa">Pausa</button>
+    </div>
+    <div class="status" id="estado">Pulsa Iniciar</div>
+    <canvas id="juego" class="game" width="300" height="600"></canvas>
+    <p class="score" id="puntos">Puntos: 0 | Líneas: 0 | Nivel: 1</p>
+    <p class="hint">← → mover | ↓ bajar | ↑ rotar | Espacio: caída dura | P: pausa</p>
+  </div>
+</div>
+<script src="tetris.js"></script>
+</body>
+</html>
